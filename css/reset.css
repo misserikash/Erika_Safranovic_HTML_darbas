@@ -7,14 +7,16 @@ html, body{
 body {
     margin: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: #ededed;
+    background-color: #fff;
 }
   
 a {
     text-decoration: none;
     color: inherit;
 }
-  
+button, input, a {
+    cursor: pointer;
+}
 img {
     max-width: 100%;
 }
@@ -28,11 +30,16 @@ h6,
 p {
     margin-top: 0;
 }
-.wrapper{
+/* .wrapper{
     margin: 10px 20px 10px 20px;
-}
+} */
 .container {
     max-width: 1400px;
     margin: 0 auto;
     padding: 0 20px;
+}
+.container-2 {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 0 0 20px;
 }

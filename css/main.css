@@ -74,6 +74,73 @@
 .third-main-color{
     color: var(--third-main-color);
 }
+.launching{
+    padding: 100px 0 60px 0;
+}
+.launching .flex{
+    display: flex;
+
+}
+.launching .text{
+    flex-basis: 70%;
+    line-height: 1.5;
+}
+.launching .text h4{
+    color: var(--third-main-color);
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+.launching .text h1{
+    color: var(--main-color);
+    font-weight: 900;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+.launching .text p{
+    color: var(--second-main-color);
+    font-size: 16px;
+}
+.text .second-btn{
+    margin-top: 20px;
+    border-radius: 40px;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 20px 40px 20px 40px;
+    background-color: #fff;
+    border-top: 3px solid var(--orange-color);
+    border-bottom: 3px solid var(--orange-color);
+    border-right: 3px solid var(--green-color);
+    border-left: 3px solid var(--red-color);
+}
+.text .second-btn:hover{
+    background-color: var(--third-main-color);
+    border-color: var(--red-color);
+}
+.launching .graphic{
+    flex-basis: 30%;
+    background: url(../assets/graphic.svg);
+    background-size: 50vw 100%;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+.background{
+    background-image: url(../assets/background.svg);
+    max-width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 100px;
+    padding-bottom: 40px;
+}
+.background h1{
+    font-size: 30px;
+    font-weight: 600;
+}
+.background p{
+    font-size: 16px;
+    color: var(--main-color);
+}
 @media screen and (min-width:769px) {
     .header__menu{
         display:block;
@@ -83,4 +150,10 @@
     .header__burger{
        display: none;
     }
+    .launching .text{
+        flex-basis: 50%;
+    }
+    .launching .graphic{
+        flex-basis: 50%;
+    } 
 }
