@@ -133,13 +133,14 @@
     padding-top: 100px;
     padding-bottom: 40px;
 }
-.background h1{
+.background h1, .title-text h1{
     font-size: 30px;
     font-weight: 600;
 }
-.background p{
+.background p, .title-text p{
     font-size: 16px;
     color: var(--main-color);
+    line-height: 1.5;
 }
 .press{
     padding: 60px 0 60px 0;
@@ -161,7 +162,90 @@
 .icon1,  .icon4{
     display: none;
 }
-
+.title-text p{
+    color: var(--second-main-color);
+}
+.title-text >p> a{
+    text-decoration: underline;
+    font-weight: 600;
+}
+.auction{
+    padding-bottom: 100px;
+    border-bottom: 2px var(--grey-darker-color);
+}
+.cards{
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+.card{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    /* flex-wrap: wrap; */
+}
+.card-box{
+    /* flex-grow: 1; */
+}
+.card-img-1, .card-img-2, .card-img-3, .card-img-4{
+   vertical-align: middle;
+   width: 100%;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: contain;
+   height: 307px;
+}
+.card-img-1{
+    background-image: url(../assets/ntfs/ntf-1.svg);
+}
+.card-img-2{
+    background-image: url(../assets/ntfs/nft-2.svg);
+}
+.card-img-3{
+    background-image: url(../assets/ntfs/ntf-3.svg);
+}
+.card-img-4{
+    background-image: url(../assets/ntfs/ntf-4.svg);
+}
+.card-content{
+    background-color: var(--grey-light-color);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.series-bid, .man, .days{
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    width: 100%;
+}
+.series-bid span {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 500;
+}
+.series-bid > .orange-span{
+    color: var(--orange-color);
+}
+.series-bid > .grey-span{
+    color: var(--grey-darker-color);
+}
+.man {
+    color: var(--main-color);
+    font-size: 18px;
+    font-weight: 700;
+}
+.man img{
+    vertical-align: middle;
+}
+.days{
+    font-size: 16px;
+    color: var(--grey-darker-color);
+}
 @media screen and (min-width:769px) {
     .header__menu{
         display:block;
