@@ -141,6 +141,27 @@
     font-size: 16px;
     color: var(--main-color);
 }
+.press{
+    padding: 60px 0 60px 0;
+}
+.icons{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+.icons-flex{
+    flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon1-mobile, .icon3 {
+    padding-right: 40px;
+}
+.icon1,  .icon4{
+    display: none;
+}
+
 @media screen and (min-width:769px) {
     .header__menu{
         display:block;
