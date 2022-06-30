@@ -1,0 +1,86 @@
+@import './reset.css';
+@import './var.css';
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css);
+
+.header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 40;
+}
+.header:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    
+}
+.header__body{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+}
+.header__logo{
+    
+}
+.header__burger{
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 30px;
+}
+.header__burger span{
+    position: absolute;
+    left: 0;
+    width: 100%;
+}
+.header__burger span i{
+    color: var(--btn-color);
+}
+
+.header__menu{
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+.header__list{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    
+}
+.header__list li{
+    list-style: none;
+    margin: 0 0 0 30px;
+}
+.header__link{
+
+}
+.second-main-color{
+    color: var(--second-main-color);
+}
+.third-main-color{
+    color: var(--third-main-color);
+}
+@media screen and (min-width:769px) {
+    .header__menu{
+        display:block;
+        top: 25%;
+        bottom: 25%;
+    }
+    .header__burger{
+       display: none;
+    }
+}
