@@ -153,7 +153,28 @@
 .press{
     padding: 60px 0 60px 0;
 }
-.icons{
+.icons__flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.icon{
+    width: 50%;
+    height: auto;
+    position: relative;
+    padding: 20px;
+    text-align: center;
+    overflow: hidden;
+}
+.icon img{
+    height: 47px !important;
+}
+.icons__flex > .none{
+    display: none;
+}
+
+/* .icons{
     display: flex;
     flex-wrap: wrap;
     row-gap: 20px;
@@ -169,7 +190,7 @@
 }
 .icon1,  .icon4{
     display: none;
-}
+} */
 .auction{
     padding-bottom: 120px;
     overflow: hidden;
@@ -300,6 +321,12 @@
     .background{
         border-radius: 10px;
     }
+    .icon{
+        width: 20%;
+    }
+    .icons__flex > .none{
+        display: block;
+    }
     .cards{
         overflow: visible;
         gap: 66px;
@@ -310,10 +337,5 @@
     #background .container{
         padding: 20px !important;
     }
-    .icon1,  .icon4{
-        display: inline-block;
-    }
-    .icon1-mobile{
-        display: none;
-    }
+    
 }
