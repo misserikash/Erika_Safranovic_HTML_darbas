@@ -32,6 +32,7 @@
     position: relative;
     width: 30px;
     height: 30px;
+    cursor: pointer;
 }
 .header__burger span{
     position: absolute;
@@ -84,7 +85,7 @@
 }
 
 .launching{
-    padding: 100px 0 0 0;
+    padding: 100px 0 40px 0;
 }
 .launching .flex{
     display: flex;
@@ -151,7 +152,7 @@
 }
 .background h1, .title-text h1{
     font-size: 30px;
-    font-weight: 600;
+    font-weight: 500;
 }
 .background p, .title-text p{
     font-size: 16px;
@@ -159,7 +160,7 @@
     line-height: 1.5;
 }
 .press{
-    padding: 60px 0 60px 0;
+    padding: 60px 0 80px 0;
 }
 .icons__flex{
     display: flex;
@@ -183,7 +184,7 @@
     display: none;
 }
 .auction{
-    padding-bottom: 120px;
+    padding-bottom: 80px;
     overflow: hidden;
 }
 .title-text p{
@@ -276,7 +277,7 @@
     padding-top: 0px !important;
 }
 .top {
-    padding-top: 100px;
+    padding-top: 80px;
     border-bottom: 2px solid var(--grey-light-color);
     border-top: 2px solid var(--grey-light-color);
     bottom: -5px;
@@ -286,7 +287,7 @@
     border-bottom: 2px solid var(--grey-light-color);
 }
 #footer{
-    padding-top: 60px;
+    padding-top: 80px;
 }
 .footer{
     display: flex;
@@ -310,6 +311,9 @@
 .footer__icons a{
     padding-right: 10px;
 }
+.footer__icons a:hover{
+    color: var(--third-main-color);
+}
 .nav{
     position: relative;
     width: 30%;
@@ -326,10 +330,13 @@
     list-style: none;
     padding-left: 0;
 }
+.nav a:hover{
+    color: var(--third-main-color);
+}
 .footer__end{
     color: var(--btn-color);
     font-size: 14px;
-    padding: 20px 0 20px 0;
+    padding: 40px 0 20px 0;
 }
 .footer-flex{
     display: flex;
@@ -337,6 +344,7 @@
 }
 .end{
     display: none;
+    padding: 0 30px 0 30px;
 }
 @media screen and (min-width:769px) {
     .header__menu{
@@ -354,8 +362,10 @@
         max-width: 450px;
     }
     .launching .text h1{
-        font-size: 80px;
         max-width: 600px;
+    }
+    .launching .large h1{
+        font-size: 80px;
     }
     .launching .graphic-1, .launching .graphic-2{
         flex-basis: 50%;
@@ -375,6 +385,9 @@
     }
     .cards > .right{
         gap: 66px;
+    }
+    .launching .middle h1{
+        font-size: 48px;
     }
     #background .container{
         padding: 20px !important;
