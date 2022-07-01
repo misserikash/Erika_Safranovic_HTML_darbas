@@ -1,6 +1,10 @@
 * {
     box-sizing: border-box;
 }
+/* checked why left side has empty place */
+*{
+    outline: 1px solid red;
+    }
 html, body{
     height: 100%;
 }
@@ -35,11 +39,11 @@ p {
 } */
 .container {
     max-width: 900px;
-    margin: 0 auto;
+    margin: auto auto;
     padding: 0 20px;
 }
 .container-2 {
     max-width: 900px;
-    margin: 0 auto;
+    margin: auto auto;
     padding: 0 0 0 20px;
 }

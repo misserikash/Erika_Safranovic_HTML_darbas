@@ -4,13 +4,15 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css);
 
 .header{
-    position: fixed;
+    /* position: fixed; */
     width: 100%;
     top: 0;
     left: 0;
     z-index: 40;
+    background-color: #fff;
+    padding: 20px 0 20px 0;
 }
-.header:before{
+/* .header:before{
     content: '';
     position: absolute;
     top: 0;
@@ -19,7 +21,7 @@
     height: 100%;
     background-color: #fff;
     
-}
+} */
 .header__body{
     position: relative;
     display: flex;
@@ -127,15 +129,17 @@
     background-repeat: no-repeat;
     background-position: 0 0;
 }
+#background .container{
+    padding: 0 !important;
+}
 .background{
     background-image: url(../assets/background.svg);
     width: 100%;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     vertical-align: middle;
-    /* padding-top: 100px;
-    padding-bottom: 40px; */
-    padding: 100px 40px 40px 40px;
+    background-position: center;
+    padding: 80px 20px 20px 20px;
 }
 .background h1, .title-text h1{
     font-size: 30px;
@@ -168,6 +172,7 @@
 }
 .auction{
     padding-bottom: 120px;
+    overflow: hidden;
 }
 .title-text p{
     color: var(--second-main-color);
@@ -182,11 +187,14 @@
     gap: 20px;
 }
 .card{
-    max-width: 400px;
-    max-height: 290px;
+    /* max-width: 400px;
+    max-height: 290px; */
+    width: 200px;
+    height: auto;
 }
 .card__img{
     max-width: 100%;
+    height: auto;
 }
 .card__content{
     background-color: var(--grey-light-color);
@@ -247,15 +255,19 @@
     background-position: 0 0;
 }
 .border {
-    border-bottom: 0.6px solid var(--grey-darker-color);
-    border-top: 0.6px solid var(--grey-darker-color);
     padding-bottom: 0px !important;
-    top: 40px;
-    position: relative;
     padding-top: 0px !important;
-    /* margin-top: 80px; */
 }
-
+.top {
+    padding-top: 100px;
+    border-bottom: 2px solid var(--grey-light-color);
+    border-top: 2px solid var(--grey-light-color);
+    bottom: -5px;
+    position: relative;
+}
+.top > .text h1{
+    border-bottom: 2px solid var(--grey-light-color);
+}
 
 @media screen and (min-width:769px) {
     .header__menu{
@@ -271,5 +283,8 @@
     }
     .launching .graphic-1, .launching .graphic-2{
         flex-basis: 50%;
-    } 
+    }
+    .background{
+        border-radius: 10px;
+    }
 }
