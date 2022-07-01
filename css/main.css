@@ -42,6 +42,9 @@
 .header__burger span i{
     color: var(--btn-color);
 }
+.header__burger span i:hover{
+    color: var(--third-main-color);
+}
 
 .header__menu{
     position: relative;
