@@ -1,12 +1,12 @@
 :root{
-    --main-color: #111111;
-    --second-main-color: #555555;
-    --third-main-color: #FF3998;
-    --btn-color: #999999;
-    --orange-color: #FF8139;
-    --green-color: #39FFA0;
-    --red-color: #FF3939;
-    --grey-light-color: #EEEEEE;
-    --grey-darker-color: #777777;
+    --main-color: rgb(17, 17, 17);
+    --second-main-color: rgb(85, 85, 85);
+    --third-main-color: rgb(255, 57, 152);
+    --btn-color: rgb(153, 153, 153);
+    --orange-color: rgb(255, 129, 57);
+    --green-color: rgb(57, 255, 160);
+    --red-color: rgb(255, 57, 57);
+    --grey-light-color: rgb(238, 238, 238);
+    --grey-darker-color: rgb(119, 119, 119);
 
 }

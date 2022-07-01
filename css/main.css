@@ -20,7 +20,12 @@
     height: 40px;
 }
 .header__logo{
-    
+    padding: 10px 20px 10px 20px;
+    border-radius: 40px;
+}
+.header__logo:hover{
+    background-color: var(--third-main-color);
+    transition: all 0.3s ease-in-out;
 }
 .header__burger{
     display: block;
@@ -59,7 +64,8 @@
     margin: 0 0 0 30px;
 }
 .header__link{
-
+    padding: 20px;
+    border-radius: 40px;
 }
 .second-main-color{
     color: var(--second-main-color);
@@ -67,6 +73,16 @@
 .third-main-color{
     color: var(--third-main-color);
 }
+.second-main-color:hover{
+    background-color: var(--third-main-color);
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+.third-main-color:hover{
+    background-color: var(--main-color);
+    color: white;
+}
+
 .launching{
     padding: 100px 0 0 0;
 }
@@ -101,6 +117,7 @@
     font-weight: 700;
     padding: 20px 40px 20px 40px;
     background-color: #fff;
+    border: none;
     border-top: 3px solid var(--orange-color);
     border-bottom: 3px solid var(--orange-color);
     border-right: 3px solid var(--green-color);
@@ -108,8 +125,9 @@
     margin-bottom: 60px;
 }
 .text .second-btn:hover{
-    background-color: var(--third-main-color);
-    border-color: var(--red-color);
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+    color: #fff;
 }
 .launching .graphic-1{
     flex-basis: 30%;
